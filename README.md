@@ -2,17 +2,17 @@
 
 DevSecOps toolkit featuring a "Compliance-as-Code" mapper for the NIST AI RMF and a mathematical Abstract Syntax Tree (AST) scanner to prevent OWASP LLM vulnerabilities.
 
-⚡ The Problem: AI Moves Fast, Security Lags
+⚡ The Challenge: AI Speed vs. Security Lag
 
-As enterprises race to deploy AI Agents (LangChain, AutoGPT) and LLMs, manual security audits bottleneck production and expose organizations to massive regulatory fines (e.g., the EU AI Act). Traditional text-based security scanners fail to understand the complex execution contexts of AI-generated code.
+As enterprises rapidly deploy autonomous AI agents (LangChain, AutoGPT) and large language models, manual security audits create severe production bottlenecks and expose organizations to severe regulatory fines under the EU AI Act. Traditional text-based security regex scanners completely fail to understand the complex execution contexts of modern AI-generated code.
 
-🚀 The Solution: Dual-Engine DevSecOps
+🚀 The Solution: Dual-Engine DevSecOps Framework
 
-This repository provides a zero-dependency, dual-engine toolkit designed to be dropped directly into enterprise CI/CD pipelines:
+This repository provides a zero-dependency, dual-engine security toolkit engineered to drop directly into enterprise CI/CD pipelines:
 
-Governance-as-Code (CLI): Parses AI system architecture JSON files and dynamically generates executive-ready Markdown audit reports mapping to the NIST AI Risk Management Framework.
+Governance-as-Code (CLI): Parses AI architecture config files and dynamically generates executive-ready audit reports mapping to the NIST AI Risk Management Framework.
 
-Mathematical AST Scanner (SAST): A custom built Static Application Security Testing engine that compiles Python source code into an Abstract Syntax Tree (AST) to mathematically detect hardcoded secrets and dangerous LLM code execution paths (OWASP LLM02/LLM04).
+Mathematical AST Scanner (SAST): A custom built Static Application Security Testing engine that compiles Python source code into an Abstract Syntax Tree (AST) to mathematically detect hardcoded credentials and dangerous execution paths (OWASP LLM02/LLM04).
 
 🏗️ System Architecture
 
@@ -32,12 +32,12 @@ graph TD
 
 Instead of relying on basic regex string matching, this engine uses Python's native ast library to deeply understand execution paths and flag dangerous LLM implementation patterns before compilation.
 
-Execution
+Execution Command
 
 python sast_engine.py vulnerable_app.py
 
 
-Example Detection Output
+Sample Detection Output
 
 ==================================================
 🔍 INITIALIZING AST SECURITY SCANNER
@@ -57,14 +57,14 @@ Example Detection Output
 
 Automates the generation of GRC documentation. Feeds architectural metadata into a rule engine to instantly output remediation steps for compliance blindspots.
 
-Execution
+Execution Command
 
 python nist_mapper.py --config architecture.json --output audit_report.md
 
 
-Supported Frameworks
+Supported Regulatory Frameworks
 
-NIST AI 100-1: Artificial Intelligence Risk Management Framework
+NIST AI 100-1: Artificial Intelligence Risk Management Framework.
 
 OWASP LLM Top 10: Specifically targeting LLM02 (Insecure Output Handling) and LLM04 (Model Denial of Service).
 
