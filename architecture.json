@@ -1,0 +1,18 @@
+{
+"project_name": "Enterprise Customer Support AI",
+"version": "1.0.0",
+"deployment_environment": "production",
+"data_classification": "PII",
+"llm_provider": "OpenAI",
+"model_version": "gpt-4",
+"infrastructure": {
+"hosting": "AWS",
+"database": "RDS_PostgreSQL",
+"network_exposure": "public_api"
+},
+"security_controls": [
+"TLS_1.2",
+"API_Key_Auth",
+"RBAC_Gateway"
+]
+}
