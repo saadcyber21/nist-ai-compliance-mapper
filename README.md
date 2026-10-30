@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-0-brightgreen.svg)](#)
-[![CI/CD Ready](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-orange.svg)](#)
+[![CI](https://github.com/saadcyber21/nist-ai-compliance-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/saadcyber21/nist-ai-compliance-mapper/actions)
 
 > **Deterministic, zero-dependency DevSecOps toolkit** featuring a "Compliance-as-Code" mapper for the NIST AI RMF and a mathematical Abstract Syntax Tree (AST) scanner to prevent OWASP Top 10 for LLMs.
 
